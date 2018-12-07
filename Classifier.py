@@ -35,13 +35,13 @@ def Model(x_train, y_train, y_train_true, x_test, y_test, y_test_true,learning_r
     #weight bias initialization
     #
     #input layer -> 784 units
-    #hidden layer 1 -> 10 units with activation function tanh
-    #ouput layer -> 10 units with activation function softmax
+    #hidden layer 1 -> 16 units with activation function tanh
+    #ouput layer -> 16 units with activation function softmax
     #
-    w1 = np.random.randn(10,784) * np.sqrt(1/784) #weight matrix to hidden layer 1
-    b1 =  np.random.randn(10, 1) * np.sqrt(1/784)
-    w2 =  np.random.randn(10, 10) * np.sqrt(1/10) #weight matrix to output layer 
-    b2 = np.random.randn(10, 1)* np.sqrt(1/10)
+    w1 = np.random.randn(16,784) * np.sqrt(1/784) #weight matrix to hidden layer 1
+    b1 =  np.random.randn(16, 1) * np.sqrt(1/784)
+    w2 =  np.random.randn(10, 16) * np.sqrt(1/16) #weight matrix to output layer 
+    b2 = np.random.randn(10, 1)* np.sqrt(1/16)
 
     for index in range(1,iteration+1):
         """ Forward propagation"""
